@@ -62,13 +62,16 @@ header {
 }
 
 .logo {
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px #00eaff, 0 0 25px #00eaff;
+    display: block;
+    width: 150px;
+    line-height: 0;
 }
 
-.logo span { color: #00eaff; }
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 nav { display: flex; gap: 35px; }
 nav a {
