@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="WittyWrens is a practical launchpad for AI, development, design, productivity and cloud tools.">
+    <title>WITTYWRENS | Tech tools for curious builders</title>
+    <link rel="stylesheet" href="style.css">
+    <div class="background-grid" aria-hidden="true"></div>
+    <header>
+        <a class="logo" href="#home" aria-label="WittyWrens home"><span>W</span> WITTYWRENS</a>
+        <nav><a href="#tools">Toolbox</a><a href="#about">Why us</a><a href="#feedback">Feedback</a></nav>
+        <button class="chat-trigger" id="open-chat" type="button"><span>✦</span> Ask Wren</button>
+    </header>
+    <main id="home">
+        <section class="hero">
+            <div class="eyebrow"><span class="status-dot"></span> THE BUILDER'S TOOLBOX · 2026</div>
+            <h1>Make room for<br><span>better ideas.</span></h1>
+            <p>One focused home for the tools, shortcuts and thinking fuel that help curious people build what’s next.</p>
+            <div class="buttons"><a href="#tools" class="btn primary">Explore the toolbox <span>↓</span></a><button class="btn secondary" id="hero-chat" type="button">Talk to Wren <span>↗</span></button></div>
+            <div class="hero-note"><span>✳</span> Curated for creators, developers and digital explorers</div>
+            <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        </section>
+        <section id="tools" class="section tools-section">
+            <div class="section-heading"><div><div class="section-kicker">01 / DISCOVER</div><h2>Your next useful thing.</h2></div><p>Skip the noise. Find a sharp tool for the job in a few clicks.</p></div>
+            <div class="tool-controls">
+                <label class="search-box"><span>⌕</span><input id="tool-search" type="search" placeholder="Search tools, skills, or tasks..." aria-label="Search tools"></label>
+                <div class="filters" role="group" aria-label="Filter tools"><button class="filter active" type="button" data-filter="all">All tools</button><button class="filter" type="button" data-filter="ai">AI</button><button class="filter" type="button" data-filter="build">Build</button><button class="filter" type="button" data-filter="design">Design</button><button class="filter" type="button" data-filter="focus">Focus</button></div>
+            </div>
+            <div class="tool-grid" id="tool-grid">
+                <article class="tool-card featured" data-category="ai" data-search="prompt lab ai brainstorm writing"><div class="tool-top"><span class="tool-icon coral">✦</span><span class="tool-tag">POPULAR</span></div><h3>Prompt Lab</h3><p>Turn a rough thought into a clear, reusable prompt.</p><button class="tool-link" data-tool="Prompt Lab" type="button">Open tool <span>↗</span></button></article>
+                <article class="tool-card" data-category="build" data-search="code sandbox developer html css javascript build"><div class="tool-top"><span class="tool-icon blue">&lt;/&gt;</span><span class="tool-tag">BUILD</span></div><h3>Code Sandbox</h3><p>Sketch, test and share small ideas without the setup.</p><button class="tool-link" data-tool="Code Sandbox" type="button">Open tool <span>↗</span></button></article>
+                <article class="tool-card" data-category="design" data-search="color palette design brand visual"><div class="tool-top"><span class="tool-icon yellow">◈</span><span class="tool-tag">DESIGN</span></div><h3>Palette Picker</h3><p>Find a confident color direction for your next project.</p><button class="tool-link" data-tool="Palette Picker" type="button">Open tool <span>↗</span></button></article>
+                <article class="tool-card" data-category="focus" data-search="focus timer productivity pomodoro work"><div class="tool-top"><span class="tool-icon mint">◷</span><span class="tool-tag">FOCUS</span></div><h3>Focus Sprint</h3><p>A calm 25-minute timer for making meaningful progress.</p><button class="tool-link" data-tool="Focus Sprint" type="button">Start sprint <span>↗</span></button></article>
+                <article class="tool-card" data-category="ai" data-search="meeting notes ai summary productivity"><div class="tool-top"><span class="tool-icon violet">≋</span><span class="tool-tag">AI</span></div><h3>Note Weaver</h3><p>Shape scattered notes into a clean, useful outline.</p><button class="tool-link" data-tool="Note Weaver" type="button">Open tool <span>↗</span></button></article>
+                <article class="tool-card" data-category="build" data-search="api explorer developer data json build"><div class="tool-top"><span class="tool-icon orange">⌁</span><span class="tool-tag">BUILD</span></div><h3>API Explorer</h3><p>Understand what a service can do before you wire it in.</p><button class="tool-link" data-tool="API Explorer" type="button">Open tool <span>↗</span></button></article>
+            </div>
+            <p class="empty-state" id="empty-state" hidden>No tools match that search yet. Try a different word.</p>
+    </section>
+
+    <section id="about" class="section about-section"><div class="section-heading"><div><div class="section-kicker">02 / THE IDEA</div><h2>Useful beats impressive.</h2></div><p>Technology should give your attention back, not ask for more of it.</p></div><div class="principles"><div><span>01</span><h3>Curated</h3><p>Small, intentional collections over endless directories.</p></div><div><span>02</span><h3>Playful</h3><p>Room to experiment is where good ideas get interesting.</p></div><div><span>03</span><h3>Human</h3><p>Tools should support your point of view, never replace it.</p></div></div></section>
+        <section id="feedback" class="section feedback-section"><div class="feedback-copy"><div class="section-kicker">03 / TALK BACK</div><h2>Help shape the next version.</h2><p>What would make this corner of the internet more useful for you?</p></div><form class="feedback-form" id="feedback-form"><label for="feedback-message">Your idea, request, or tiny triumph</label><textarea id="feedback-message" name="message" rows="4" placeholder="I wish WittyWrens had..." required></textarea><div class="feedback-row"><div class="rating" role="group" aria-label="Rate WittyWrens"><span>How's it feeling?</span><button type="button" class="rating-button" data-rating="1">1</button><button type="button" class="rating-button" data-rating="2">2</button><button type="button" class="rating-button" data-rating="3">3</button><button type="button" class="rating-button" data-rating="4">4</button><button type="button" class="rating-button" data-rating="5">5</button></div><button class="submit-button" type="submit">Send feedback <span>↗</span></button></div><p class="form-status" id="form-status" role="status"></p></form></section>
+    </main>
+    <footer><p>© 2026 WITTYWRENS · Made for curious builders</p><a href="#home">Back to top ↑</a></footer>
+    <aside class="chat-panel" id="chat-panel" aria-hidden="true" aria-label="Chat with Wren"><div class="chat-header"><div><span class="chat-avatar">W</span><div><strong>Wren</strong><small>Usually replies instantly</small></div></div><button id="close-chat" type="button" aria-label="Close chat">×</button></div><div class="chat-messages" id="chat-messages"><div class="message bot">Hey, I’m Wren. What are you trying to make today?</div><div class="quick-replies"><button type="button" data-message="I want to build a website">Build a website</button><button type="button" data-message="I need a focus tool">Find a focus tool</button></div></div><form class="chat-form" id="chat-form"><input id="chat-input" type="text" placeholder="Ask me anything..." autocomplete="off" aria-label="Chat message"><button type="submit" aria-label="Send message">↑</button></form></aside>
+    <script src="script.js"></script>
+    
+    </body>
+    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WITTYWRENS | The Future Is Coming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-grid"></div>
+
+    <header>
+        <a class="logo" href="#home" aria-label="The WittyWrens home">
+            <img src="logo.svg" alt="The WittyWrens" />
+        </a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="badge">⚡ SOMETHING NEW IS COMING</div>
+            <h1>WITTYWRENS<br><span>THE FUTURE OF TECHNOLOGY</span></h1>
+            <p>Get ready for a new digital experience built for creators, developers, innovators and technology lovers.</p>
+
+            <div class="buttons">
+                <a href="#about" class="btn primary">Explore More</a>
+                <a href="#features" class="btn secondary">View Features</a>
+            </div>
+
+            <div class="countdown">
+                <div class="time-box"><span id="days">00</span><small>DAYS</small></div>
+                <div class="time-box"><span id="hours">00</span><small>HOURS</small></div>
+                <div class="time-box"><span id="minutes">00</span><small>MINUTES</small></div>
+                <div class="time-box"><span id="seconds">00</span><small>SECONDS</small></div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-title"><span>01</span><h2>ENTER THE FUTURE</h2></div>
+            <p>WITTYWRENS is a futuristic technology platform designed to bring powerful digital tools, learning resources, artificial intelligence and innovation together.</p>
+        </section>
+
+        <section id="features" class="section">
+            <div class="section-title"><span>02</span><h2>WHAT'S COMING</h2></div>
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">🤖</div>
+                    <h3>AI TECHNOLOGY</h3>
+                    <p>Intelligent tools designed to make technology easier and more powerful.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">💻</div>
+                    <h3>DEVELOPMENT</h3>
+                    <p>Learn and explore modern programming, web development and software.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🚀</div>
+                    <h3>INNOVATION</h3>
+                    <p>Discover new ideas and technologies shaping the digital future.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer><p>© 2026 WITTYWRENS • Built for the Future<br>DEVELOPED BY TAREMWA ELIJAH WITTYWREN<br>wittywren.tech.ent@gmail.com</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
